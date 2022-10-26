@@ -159,6 +159,55 @@ body {
   cursor: pointer;
   transition: background-color 0.5s ease;
 }
-.btn:hover{
+.btn:hover {
   background-color: var(--light-grey);
+}
+
+.social-media {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding: 24px 0;
+}
+
+.footer {
+  padding: 48px 0;
+}
+.footer hr {
+  border: 1px solid var(--extraLight-grey);
+  background-color: var(--extraLight-grey);
+}
+.footer .sponsor {
+  padding-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer .sponsor span {
+  font-size: 16px;
+  color: var(--medium-grey);
+  font-weight: 400;
+}
+
+@media (max-width: 800px) {
+  .footer .sponsor span {
+    font-size: 12px;
+  }
+}
+@media (max-width: 700px) {
+  .share-tooltip .share {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+  .footer .sponsor {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+  .footer .sponsor span {
+    font-size: 16px;
+  }
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from './Header';
+import Footer from './Footer';
 
 const Link = () => {
   return (
@@ -32,7 +33,13 @@ const Link = () => {
         >
           Design Books
         </a>
+
+        <div className='social-media'>
+          <img src='/assets/slack.svg' alt='slack icon' />
+          <img src='/assets/github.svg' alt='slack icon' />
+        </div>
       </div>
+      <Footer />
     </div>
   );
 };
