@@ -33,7 +33,7 @@ body {
   position: relative;
   display: flex;
   align-items: center;
-  max-width: 500px;
+  max-width: 600px;
   margin: auto;
   padding-top: 2.5rem;
 }
@@ -76,36 +76,20 @@ body {
 .profile-imgContainer:hover .camera-overlay-bg {
   display: block;
 }
-/* 
-.profile-container::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  background: transparent;
-  top: 0;
-  border-radius: 50px;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  transition: all .5s ease;
-}
 
-.profile-container:hover.profile-container::after {
-  background: #344054BF;
-}
-
-.header > div:nth-child(1) > p:nth-child(2) {
+.profile-container > p:nth-child(2) {
   font-weight: 700;
-  margin-bottom: 0;
-  font-size: 16px;
+  margin-top: 1rem;
+  font-size: 20px;
 }
 
-.header > div:nth-child(1) > p:nth-child(3) {
+.profile-container > p:nth-child(3),
+.menu {
   display: none;
 }
 
-.header > span:nth-child(2) {
-  border: 1px dashed #D0D5DD;
+.header .share-tooltip {
+  border: 1px dashed var(--light-grey);
   width: 35px;
   height: 35px;
   border-radius: 50px;
@@ -116,16 +100,10 @@ body {
   position: absolute;
   top: 40px;
   right: 0;
-  transition: all .6s ease;
+  transition: all 0.6s ease;
 }
-
-.header > span:nth-child(2):hover {
-  background: #EAECF0;
-}
-
-.share-tooltip {
-  position: relative;
-  display: inline-block;
+.header .share-tooltip:hover {
+  background-color: var(--extraLight-grey);
 }
 
 .share-tooltip .tiptext {
@@ -146,13 +124,13 @@ body {
 }
 
 .share-tooltip .tiptext::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   margin-left: -5px;
   right: -21%;
-  border:10px solid #101828;
+  border: 10px solid #101828;
   border-color: transparent transparent transparent #101828;
 }
 
@@ -160,10 +138,27 @@ body {
   visibility: visible;
 }
 
-.share {
+.share-tooltip .share {
   display: block;
 }
 
-.menu {
-  display: none;
-} */
+.links {
+  margin-top: 56px;
+}
+.btn {
+  all: unset;
+  color: var(--black-grey);
+  font-weight: 500;
+  display: block;
+  text-align: center;
+  width: 100%;
+  border-radius: 8px;
+  background-color: var(--extraLight-grey);
+  padding: 24px 0;
+  margin-bottom: 24px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+.btn:hover{
+  background-color: var(--light-grey);
+}
