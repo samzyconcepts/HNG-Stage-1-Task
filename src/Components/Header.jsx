@@ -6,9 +6,9 @@ const Header = () => {
       <div className='profile-container'>
         <div className='profile-imgContainer'>
           <img
-            src='/assets/profile__img.png'
+            src='/assets/profile__img.jpg'
             alt='profile_img'
-            id='profile_img'
+            id='profile__img'
           />
           <span className='camera-overlay-bg'>
             <img src='/assets/camera.svg' className='camera' alt='camera' />
